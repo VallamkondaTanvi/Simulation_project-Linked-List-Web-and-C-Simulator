@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked List Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Linked List Visualization</h1>
+        
+        <div class="controls-section">
+            <div class="input-group">
+                <div class="input-field">
+                    <label for="valueInput">Value:</label>
+                    <input type="number" id="valueInput" placeholder="Enter value">
+                </div>
+                <div class="input-field">
+                    <label for="positionInput">Position:</label>
+                    <input type="number" id="positionInput" placeholder="Enter position">
+                </div>
+            </div>
+
+            <div class="button-group">
+                <h3>Insert Operations</h3>
+                <button onclick="insertAtBeginning()" class="btn btn-insert">Insert at Beginning</button>
+                <button onclick="insertAtEnd()" class="btn btn-insert">Insert at End</button>
+                <button onclick="insertAtPosition()" class="btn btn-insert">Insert at Position</button>
+            </div>
+
+            <div class="button-group">
+                <h3>Delete Operations</h3>
+                <button onclick="deleteFromBeginning()" class="btn btn-delete">Delete from Beginning</button>
+                <button onclick="deleteFromEnd()" class="btn btn-delete">Delete from End</button>
+                <button onclick="deleteAtPosition()" class="btn btn-delete">Delete at Position</button>
+            </div>
+
+            <div class="button-group">
+                <h3>Search Operation</h3>
+                <button onclick="searchValue()" class="btn btn-search">Search</button>
+            </div>
+        </div>
+
+        <div class="message" id="message"></div>
+
+        <div class="visualization-section">
+            <h2>Linked List:</h2>
+            <div class="linked-list" id="linkedList">
+                <span class="empty-list">Empty List</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
